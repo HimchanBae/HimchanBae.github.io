@@ -215,6 +215,9 @@ nav {
 
 .project__wrapper {
   position: relative;
+  border-radius: 20px;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
+  overflow: hidden;
 }
 
 .project__description {
@@ -234,4 +237,22 @@ nav {
   height: 100%;
   background-color: #1c1d25;
   opacity: 0.7;
+}
+
+.project__description--title {
+  font-size: 40px;
+}
+
+.project__description--sub-title {
+  margin-top: 8px;
+}
+
+.project__description--link {
+  color: white;
+  font-size: 20px;
+  margin-right: 16px;
+}
+
+.project__description--para {
+  margin: 16px 0;
 }
