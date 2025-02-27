@@ -209,8 +209,13 @@ nav {
   margin-bottom: 60px;
 }
 
+.project {
+  margin-bottom: 132px;
+}
+
 .project__img {
   width: 100%;
+  transition: transform 450ms ease, filter 450ms ease;
 }
 
 .project__wrapper {
@@ -220,13 +225,29 @@ nav {
   overflow: hidden;
 }
 
+.project__wrapper:hover .project__description {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.project__wrapper:hover .project__img {
+  transform: scale(1.07);
+  filter: blur(5px);
+}
+
 .project__description {
   position: absolute;
   top: 50%;
   left: 90px;
-  transform: translateY(-50%);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 300ms, transform 450ms ease;
   color: white;
   max-width: 550px;
+}
+
+.project__wrapper:hover .project__wrapper--bg {
+  opacity: 0.7;
 }
 
 .project__wrapper--bg {
@@ -235,8 +256,9 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
   background-color: #1c1d25;
-  opacity: 0.7;
+  transition: all 450ms ease;
 }
 
 .project__description--title {
