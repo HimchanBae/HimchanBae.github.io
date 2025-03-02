@@ -28,3 +28,16 @@ async function contact(event) {
 document.addEventListener("DOMContentLoaded", () => {
   emailjs.init("BRzZxg-TiEgtiOBNY");
 });
+
+let isModalOpen = false;
+
+function toggleModal() {
+  if (isModalOpen) {
+    isModalOpen = false;
+    return document.body.classList.remove("modal--open");
+  }
+
+  isModalOpen = true;
+
+  document.body.classList.add("modal--open");
+}
