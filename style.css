@@ -76,6 +76,7 @@ label {
 }
 
 .click {
+  cursor: pointer;
   transition: all 300ms ease;
 }
 
@@ -286,6 +287,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .modal__about {
@@ -344,6 +346,62 @@ nav {
 .modal__para {
   margin-bottom: 12px;
   line-height: 1.75;
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.modal__overlay--loading {
+  background-color: #242424;
+  font-size: 80px;
+}
+
+.modal__overlay--success {
+  background-color: #4bb543;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding: 28px;
+  /* transition: all 300ms ease; */
+}
+
+/* .modal__overlay--success:hover {
+  color: #f0d149;
+} */
+
+.modal__overlay--visible {
+  z-index: 1;
+}
+
+.fa-spinner {
+  animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.modal__exit {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 36px;
+  z-index: 100;
 }
 
 .form__item {
