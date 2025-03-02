@@ -1,3 +1,16 @@
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+
+  if (contrastToggle) {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
+  }
+}
+
 async function contact(event) {
   event.preventDefault();
 
@@ -28,8 +41,6 @@ async function contact(event) {
 document.addEventListener("DOMContentLoaded", () => {
   emailjs.init("BRzZxg-TiEgtiOBNY");
 });
-
-let isModalOpen = false;
 
 function toggleModal() {
   if (isModalOpen) {

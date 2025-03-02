@@ -51,7 +51,7 @@
               >Contact</a
             >
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a href="#" class="nav__link--anchor"
               ><i class="fas fa-adjust"></i
             ></a>
@@ -67,7 +67,11 @@
             passion for building web applications with great user experiences.
             <br />
             Here's a bit more
-            <b class="yellow click" onclick="toggleModal()">about me</b>.
+            <b
+              class="yellow click link__hover-effect link__hover-effect--yellow"
+              onclick="toggleModal()"
+              >"about me"</b
+            >.
           </p>
         </div>
         <div class="social__list">
@@ -200,7 +204,7 @@
               ><textarea class="input" type="text" name="message"></textarea>
             </div>
             <button id="contact__submit" class="form__submit">
-              Send it my way
+              Send it my way!
             </button>
           </form>
           <div class="modal__overlay modal__overlay--loading">
@@ -242,10 +246,14 @@
                       Lorem ipsum dolor sit amet,
                     </p>
                     <div class="project__description--links">
-                      <a href="#" class="project__description--link"
+                      <a
+                        href="#"
+                        class="project__description--link link__hover-effect link__hover-effect--yellow"
                         ><i class="fab fa-github"></i
                       ></a>
-                      <a href="#" class="project__description--link"
+                      <a
+                        href="#"
+                        class="project__description--link link__hover-effect link__hover-effect--yellow"
                         ><i class="fas fa-link"></i
                       ></a>
                     </div>
