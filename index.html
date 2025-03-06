@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Himchan Bae</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/1e724f39fe.js"
@@ -61,43 +62,53 @@
         </nav>
       </div>
       <header class="header">
-        <div class="header__content">
-          <h1 class="title">Hey</h1>
-          <h1 class="title yellow">I'm Himchan.</h1>
-          <p class="header__para">
-            I'm a <b class="yellow">Frontend Software Engineer</b> with a strong
-            passion for building web applications with great user experiences.
-            <br />
-            Here's a bit more
-            <b
-              class="yellow click link__hover-effect link__hover-effect--yellow"
-              onclick="toggleModal()"
-              >"about me"</b
-            >.
-          </p>
+        <div class="header__left">
+          <div class="header__content">
+            <h1 class="title">Hey! <span class="wave">👋</span></h1>
+            <h1 class="title yellow">I'm Himchan.</h1>
+            <p class="header__para">
+              I'm a <b class="yellow">Fullstack Software Engineer</b> with a
+              strong passion for building web applications with great user
+              experiences.
+              <br />
+              Here's a bit more
+              <b
+                class="yellow click link__hover-effect link__hover-effect--yellow"
+                onclick="toggleModal()"
+                >"about me"</b
+              >.
+            </p>
+          </div>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/himchan-bae/"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/HimchanBae"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa fa-github"></i
+            ></a>
+            <a
+              href="./assets/Himchan Bae Resume.docx"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa fa-file-pdf"></i
+            ></a>
+          </div>
         </div>
-        <div class="social__list">
-          <a
-            href="https://www.linkedin.com/in/himchan-bae/"
-            target="_blank"
-            class="social__link click"
-          >
-            <i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/HimchanBae"
-            target="_blank"
-            class="social__link click"
-          >
-            <i class="fa fa-github"></i
-          ></a>
-          <a
-            href="./assets/Himchan Bae Resume.docx"
-            target="_blank"
-            class="social__link click"
-          >
-            <i class="fa fa-file-pdf"></i
-          ></a>
+        <div class="header__right">
+          <img
+            src="assets/photo.jpg"
+            class="profile--img"
+            title="This is me! (Himchan)"
+          />
         </div>
       </header>
       <a href="#"
@@ -371,7 +382,7 @@
               >Resume</a
             >
           </div>
-          <div class="footer__copyright">Copyright © Himchan Bae</div>
+          <div class="footer__copyright">Copyright © HB Web Studio</div>
         </div>
       </div>
     </footer>
