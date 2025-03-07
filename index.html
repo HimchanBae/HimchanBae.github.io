@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Himchan Bae</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/1e724f39fe.js"
@@ -61,43 +62,53 @@
         </nav>
       </div>
       <header class="header">
-        <div class="header__content">
-          <h1 class="title">Hey</h1>
-          <h1 class="title yellow">I'm Himchan.</h1>
-          <p class="header__para">
-            I'm a <b class="yellow">Frontend Software Engineer</b> with a strong
-            passion for building web applications with great user experiences.
-            <br />
-            Here's a bit more
-            <b
-              class="yellow click link__hover-effect link__hover-effect--yellow"
-              onclick="toggleModal()"
-              >"about me"</b
-            >.
-          </p>
+        <div class="header__left">
+          <div class="header__content">
+            <h1 class="title">Hey! <span class="wave">👋</span></h1>
+            <h1 class="title yellow">I'm Himchan.</h1>
+            <p class="header__para">
+              I'm a
+              <b class="yellow">Frontend Software Engineer</b>
+              dedicated to building beautiful, seamless, and user-friendly web
+              experiences.
+              <br />
+              Here's a bit more
+              <b class="yellow click link__hover-effect" onclick="toggleModal()"
+                >"about me"</b
+              >
+              🌝
+            </p>
+          </div>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/himchan-bae/"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/HimchanBae"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa fa-github"></i
+            ></a>
+            <a
+              href="./assets/Himchan Bae Resume.pdf"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa fa-file-pdf"></i
+            ></a>
+          </div>
         </div>
-        <div class="social__list">
-          <a
-            href="https://www.linkedin.com/in/himchan-bae/"
-            target="_blank"
-            class="social__link click"
-          >
-            <i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/HimchanBae"
-            target="_blank"
-            class="social__link click"
-          >
-            <i class="fa fa-github"></i
-          ></a>
-          <a
-            href="./assets/Himchan Bae Resume.docx"
-            target="_blank"
-            class="social__link click"
-          >
-            <i class="fa fa-file-pdf"></i
-          ></a>
+        <div class="header__right">
+          <img
+            src="assets/photo.jpg"
+            class="profile--img"
+            title="This is me! (Himchan)"
+          />
         </div>
       </header>
       <a href="#"
@@ -107,81 +118,53 @@
       <a href="#projects" class="scroll"><div class="scroll__icon"></div></a>
       <div class="modal">
         <div class="modal__half modal__about">
-          <h3 class="modal__title modal-title--about">
-            Here's a bit about me.
-          </h3>
+          <h3 class="modal__title modal-title--about">More About Me</h3>
           <h4 class="modal__sub-title modal__sub-title--about">
-            Frontend Software Engineer.
+            Himchan Bae | Frontend Software Engineer
           </h4>
           <p class="modal__para">
-            I'm a 31 year-old Korean
-            <b class="yellow">frontend software engineer</b>.<br />I am
-            <b class="yellow">funny man</b>.
+            I specialize in <b class="yellow">frontend web development</b>,
+            crafting high-performance and engaging user experiences. With a
+            strong foundation in <b class="yellow">full-stack development</b>, I
+            build seamless and scalable applications that bridge frontend and
+            backend technologies. <br /><br />
+            My expertise extends to
+            <b class="yellow">web and mobile app development</b>, enabling me to
+            deliver innovative solutions while continuously enhancing my skills.
+            <br />
           </p>
           <div class="modal__languages">
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt=""
-              />
+              <img class="modal__language--img" src="assets/html.png" />
               <span class="language__name">HTML</span>
             </figure>
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt=""
-              />
-              <span class="language__name">HTML</span>
+              <img class="modal__language--img" src="assets/css.png" />
+              <span class="language__name">CSS</span>
             </figure>
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt=""
-              />
-              <span class="language__name">HTML</span>
+              <img class="modal__language--img" src="assets/js.png" />
+              <span class="language__name">JavaScript</span>
             </figure>
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt=""
-              />
-              <span class="language__name">HTML</span>
+              <img class="modal__language--img" src="assets/figma.png" />
+              <span class="language__name">Figma</span>
             </figure>
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt=""
-              />
-              <span class="language__name">HTML</span>
+              <img class="modal__language--img" src="assets/mongo.png" />
+              <span class="language__name">Mongo DB</span>
             </figure>
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt=""
-              />
-              <span class="language__name">HTML</span>
+              <img class="modal__language--img" src="assets/express.png" />
+              <span class="language__name">Express.js</span>
             </figure>
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt=""
-              />
-              <span class="language__name">HTML</span>
+              <img class="modal__language--img" src="assets/react.png" />
+              <span class="language__name">React</span>
             </figure>
             <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt=""
-              />
-              <span class="language__name">HTML</span>
+              <img class="modal__language--img" src="assets/node.png" />
+              <span class="language__name">Node.js</span>
             </figure>
           </div>
         </div>
@@ -189,7 +172,7 @@
           <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
           <h3 class="modal__sub-title modal__sub-title--contact">
-            I'm currently open to new opportunities.
+            I'm currently open to new opportunities. <br />
           </h3>
           <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
@@ -232,7 +215,7 @@
         <div class="container">
           <div class="row">
             <h1 class="section__title">
-              Here are some of my <span class="yellow">projects</span>
+              Here are some of my <span class="yellow">Web Projects</span>
             </h1>
             <ul class="project__list">
               <li class="project">
@@ -245,10 +228,11 @@
                   <div class="project__wrapper--bg"></div>
                   <div class="project__description">
                     <h3 class="project__description--title">
-                      My First Projects
+                      Lantern Market (App Store-like Web App)
                     </h3>
                     <h4 class="project__description--sub-title">
-                      Html, CSS, JavaScript, Vue, Vuex
+                      HTML + Handlebars (hbs) | CSS | JavaScript (Node.js &
+                      Express.js) | MongoDB (GridFSBucket)
                     </h4>
                     <p class="project__description--para">
                       Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
@@ -257,14 +241,19 @@
                     </p>
                     <div class="project__description--links">
                       <a
-                        href="#"
+                        href="https://github.com/MQCOMP3120-2024/individual-project-HimchanBae"
                         class="project__description--link link__hover-effect link__hover-effect--yellow"
                         ><i class="fab fa-github"></i
                       ></a>
                       <a
-                        href="#"
+                        href="https://lanternmarket-himchanbae.onrender.com/"
                         class="project__description--link link__hover-effect link__hover-effect--yellow"
                         ><i class="fas fa-link"></i
+                      ></a>
+                      <a
+                        href="https://www.figma.com/design/EPmlsGz0r1LOHBFeVnfvZU/Lantern-Market?node-id=0-1&p=f&t=VHPj9OyqTsXjZl4C-0"
+                        class="project__description--link link__hover-effect link__hover-effect--yellow"
+                        ><i class="fa fa-paint-brush"></i
                       ></a>
                     </div>
                   </div>
@@ -280,7 +269,7 @@
                   <div class="project__wrapper--bg"></div>
                   <div class="project__description">
                     <h3 class="project__description--title">
-                      My First Projects
+                      Medi-Connect (IBM industry project)
                     </h3>
                     <h4 class="project__description--sub-title">
                       Html, CSS, JavaScript, Vue, Vuex
@@ -311,8 +300,88 @@
                   <div class="project__wrapper--bg"></div>
                   <div class="project__description">
                     <h3 class="project__description--title">
-                      My First Projects
+                      Personal Portfolio Web
                     </h3>
+                    <h4 class="project__description--sub-title">
+                      Html, CSS, JavaScript, Vue, Vuex
+                    </h4>
+                    <p class="project__description--para">
+                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Lorem ipsum dolor sit amet,
+                    </p>
+                    <div class="project__description--links">
+                      <a href="#" class="project__description--link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a href="#" class="project__description--link"
+                        ><i class="fas fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="projects">
+        <div class="container">
+          <div class="row">
+            <h1 class="section__title">
+              Here are some of my
+              <span class="yellow">Mobile Projects</span>
+            </h1>
+            <ul class="project__list">
+              <li class="project">
+                <div class="project__wrapper">
+                  <img
+                    src="./assets/blinker mockup.png"
+                    class="project__img"
+                    alt=""
+                  />
+                  <div class="project__wrapper--bg"></div>
+                  <div class="project__description">
+                    <h3 class="project__description--title">Fitness</h3>
+                    <h4 class="project__description--sub-title">
+                      HTML + Handlebars (hbs) | CSS | JavaScript (Node.js &
+                      Express.js) | MongoDB (GridFSBucket)
+                    </h4>
+                    <p class="project__description--para">
+                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                      Lorem ipsum dolor sit amet,
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        href="https://github.com/MQCOMP3120-2024/individual-project-HimchanBae"
+                        class="project__description--link link__hover-effect link__hover-effect--yellow"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        href="https://lanternmarket-himchanbae.onrender.com/"
+                        class="project__description--link link__hover-effect link__hover-effect--yellow"
+                        ><i class="fas fa-link"></i
+                      ></a>
+                      <a
+                        href="https://www.figma.com/design/EPmlsGz0r1LOHBFeVnfvZU/Lantern-Market?node-id=0-1&p=f&t=VHPj9OyqTsXjZl4C-0"
+                        class="project__description--link link__hover-effect link__hover-effect--yellow"
+                        ><i class="fa fa-paint-brush"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="project">
+                <div class="project__wrapper">
+                  <img
+                    src="./assets/blinker mockup.png"
+                    class="project__img"
+                    alt=""
+                  />
+                  <div class="project__wrapper--bg"></div>
+                  <div class="project__description">
+                    <h3 class="project__description--title">MacQ</h3>
                     <h4 class="project__description--sub-title">
                       Html, CSS, JavaScript, Vue, Vuex
                     </h4>
@@ -349,29 +418,29 @@
           </figure>
           <div class="footer__social--list">
             <a
-              href="#"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
+              href="https://github.com/HimchanBae"
+              class="footer__social--link click link__hover-effect link__hover-effect--white"
               >Github</a
             >
             <a
-              href="#"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
+              href="https://www.linkedin.com/in/himchan-bae/"
+              class="footer__social--link click link__hover-effect link__hover-effect--white"
               >LinkedIn</a
             >
             <a
               href="#"
               onclick="toggleModal()"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
+              class="footer__social--link click link__hover-effect link__hover-effect--white"
               >Contact</a
             >
             <a
-              href="./assets/David Bragg Resume.pdf"
+              href="./assets/Himchan Bae Resume.pdf"
               target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
+              class="footer__social--link click link__hover-effect link__hover-effect--white"
               >Resume</a
             >
           </div>
-          <div class="footer__copyright">Copyright © Himchan Bae</div>
+          <div class="footer__copyright">Copyright © HB Web Studio</div>
         </div>
       </div>
     </footer>
