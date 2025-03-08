@@ -572,11 +572,12 @@ nav {
 
 .modal__overlay--success {
   background-color: #4bb543;
+  color: rgb(245, 245, 245);
   font-size: 40px;
   font-weight: 700;
   text-align: center;
   padding: 28px;
-  transition: all 300ms ease;
+  transition: all 200ms ease;
 }
 
 .modal__overlay--success:hover {
@@ -859,7 +860,7 @@ footer {
     transform: none;
     height: auto;
     width: 100%;
-    flex-direction: column;
+    flex-direction: column-reverse;
     border-radius: 0;
   }
 
@@ -884,25 +885,67 @@ footer {
 
 @media (max-width: 480px) {
   .title {
-    font-size: 52px;
+    font-size: 36px;
   }
 
   .header__para {
-    font-size: 18px;
+    margin-top: 24px;
+    font-size: 18px !important;
   }
 
   .social__link {
-    width: 24px;
-    height: 24px;
-    font-size: 12px;
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 18px !important;
+  }
+
+  nav,
+  .nav__background {
+    height: 75px;
+  }
+
+  .nav__link--anchor,
+  .fa-adjust {
+    font-size: 16px;
   }
 
   .nav__link:first-child {
     display: none;
   }
 
+  .mail__btn {
+    width: 64px;
+    height: 64px;
+    bottom: 72px;
+  }
+
   .modal__half {
     padding: 40px;
+  }
+
+  .modal__exit {
+    font-size: 24px;
+  }
+
+  .language__name {
+    font-size: 14px;
+  }
+
+  .form__submit {
+    max-width: 300px;
+  }
+
+  .scroll {
+    bottom: 40px;
+  }
+
+  .container {
+    padding-top: 25px;
+  }
+
+  .section__title {
+    font-size: 36px;
+    margin-top: 60px;
   }
 
   .project__description--para {
@@ -928,5 +971,13 @@ footer {
   .project__description--link {
     font-size: 16px;
     margin-right: 8px;
+  }
+
+  .footer__logo--img {
+    height: 100px;
+  }
+
+  .shape {
+    visibility: hidden;
   }
 }
