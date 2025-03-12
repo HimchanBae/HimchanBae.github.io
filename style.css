@@ -453,6 +453,10 @@ nav {
   font-weight: 700;
 }
 
+.nav__link--anchor:hover {
+  color: #f0d149;
+}
+
 .fa-adjust {
   font-size: 20px;
 }
