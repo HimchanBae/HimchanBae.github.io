@@ -111,11 +111,7 @@ label {
 
 .title .wave {
   display: inline-block;
-}
-
-.title .wave:hover {
-  cursor: default;
-  animation: wave-animation 500ms ease-in-out;
+  animation: wave-animation 2000ms infinite ease-in-out;
 }
 
 @keyframes wave-animation {
@@ -124,7 +120,7 @@ label {
     transform: rotate(0);
   }
   50% {
-    transform: rotate(60deg);
+    transform: rotate(75deg);
   }
 }
 
@@ -228,6 +224,10 @@ nav,
 
 .dark-theme .scroll__icon:after {
   background-color: #f0d149;
+}
+
+.dark-theme .scroll__icon:hover {
+  background-color: #242424;
 }
 
 .dark-theme .mail__btn {
@@ -362,7 +362,7 @@ nav,
 
 .scroll {
   position: absolute;
-  bottom: 20px;
+  bottom: 60px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -375,6 +375,7 @@ nav,
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 300ms ease;
 }
 
 .scroll__icon:after {
@@ -384,6 +385,11 @@ nav,
   background-color: #242424;
   border-radius: 2px;
   animation: scroll 1000ms infinite alternate-reverse;
+}
+
+.scroll__icon:hover {
+  background-color: #f0d149;
+  transform: scale(1.2);
 }
 
 @keyframes scroll {
@@ -667,6 +673,8 @@ nav {
 
 .project__img {
   width: 100%;
+  height: auto;
+  display: block;
   transition: transform 450ms ease, filter 450ms ease;
 }
 
@@ -721,6 +729,10 @@ nav {
   margin-top: 8px;
 }
 
+.project__description--links {
+  margin-top: 20px;
+}
+
 .project__description--link {
   color: white;
   font-size: 24px;
@@ -736,7 +748,9 @@ nav {
 
 .project__description--link:hover {
   color: #f0d149;
+  display: inline-block;
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .project__description--para {
