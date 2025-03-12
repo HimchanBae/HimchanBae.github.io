@@ -2,6 +2,8 @@ let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
 
+document.addEventListener("mousemove", moveBackground);
+
 function moveBackground(event) {
   const shapes = document.querySelectorAll(".shape");
   const x = event.clientX * scaleFactor;
