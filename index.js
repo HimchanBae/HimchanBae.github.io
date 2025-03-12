@@ -55,15 +55,39 @@ async function contact(event) {
 
 document.addEventListener("DOMContentLoaded", () => {
   emailjs.init("BRzZxg-TiEgtiOBNY");
+
+  document.addEventListener("click", (event) => {
+    const modal = document.querySelector(".modal");
+
+    if (modal && modal.classList.contains("modal--open")) {
+      if (!modal.contains(event.target) && !event.target.closest(".click")) {
+        closeModal();
+      }
+    }
+  });
 });
 
 function toggleModal() {
-  if (isModalOpen) {
-    isModalOpen = false;
-    return document.body.classList.remove("modal--open");
+  const modal = document.querySelector(".modal");
+  const loading = document.querySelector(".modal__overlay--loading");
+  const success = document.querySelector(".modal__overlay--success");
+
+  if (modal) {
+    if (!modal.classList.contains("modal--open")) {
+      if (loading) loading.classList.remove("modal__overlay--visible");
+      if (success) success.classList.remove("modal__overlay--visible");
+    }
+
+    modal.classList.toggle("modal--open");
+    document.body.classList.toggle("modal--open");
   }
+}
 
-  isModalOpen = true;
+function closeModal() {
+  const modal = document.querySelector(".modal");
 
-  document.body.classList.add("modal--open");
+  if (modal) {
+    modal.classList.remove("modal--open");
+    document.body.classList.remove("modal--open");
+  }
 }

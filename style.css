@@ -38,23 +38,24 @@ textarea {
   width: 100%;
   background-color: rgb(245, 245, 245);
   outline: none;
-  border: 1px solid #242424;
+  border: 2px solid #242424;
   border-top: none;
   border-left: none;
   border-right: none;
   height: 40px;
-  transition: all 100ms ease;
+  transition: all 300ms ease;
 }
 
 textarea {
   resize: vertical;
-  height: 200px;
+  height: 100px !important;
   margin-top: 6px;
+  margin-bottom: 28px;
 }
 
 input:hover,
 textarea:hover {
-  border: 1.5px solid #242424;
+  border: 2px solid #242424;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -62,7 +63,7 @@ textarea:hover {
 
 input:focus,
 textarea:focus {
-  border: 1.5px solid #f0d149;
+  border: 3px solid #f0d149;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -507,11 +508,11 @@ nav {
 .modal__language {
   width: 25%;
   padding: 16px;
-  margin-bottom: 16px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   transition: all 300ms ease;
 }
 
@@ -520,7 +521,7 @@ nav {
 }
 
 .modal__language:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 .language__name {
@@ -548,9 +549,18 @@ nav {
   font-size: 14px;
 }
 
+.modal__sub-title--contact {
+  margin-bottom: 0px;
+}
+
 .modal__para {
   margin-bottom: 12px;
   line-height: 1.75;
+  font-size: 14px;
+}
+
+.modal__para--contact {
+  margin-bottom: 28px;
 }
 
 .modal__overlay {
@@ -577,11 +587,6 @@ nav {
   font-weight: 700;
   text-align: center;
   padding: 28px;
-  transition: all 200ms ease;
-}
-
-.modal__overlay--success:hover {
-  color: #f0d149;
 }
 
 .modal__overlay--visible {
@@ -622,23 +627,25 @@ nav {
 .form__submit {
   background-color: #242424;
   border: 2px solid #242424;
-  color: white;
+  color: rgb(245, 245, 245);
   font-size: 20px;
   font-weight: 700;
   width: 100%;
-  max-width: 240px;
+  max-width: 406px;
   padding: 12px 24px;
   transition: all 300ms ease;
 }
 
 .form__submit:hover {
-  border-color: #f0d149;
-  background-color: #f0d149;
+  border-color: #242424;
+  background-color: #242424;
+  color: #f0d149;
 }
 
 .form__submit:active {
-  border-color: #242424;
-  color: #242424;
+  border-color: #f0d149;
+  background-color: #f0d149;
+  color: rgb(245, 245, 245);
 }
 
 /* 
